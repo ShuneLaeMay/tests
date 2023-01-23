@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:wght@600;700;800&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// $font-family-sans-serif: 'Montserrat', sans-serif;
+// $font-family: 'Playfair Display', serif;
+$font-family: 'Kavoon', cursive;
+$enable-rounded:false;
+$component-active-bg:black;
+$primary:rgb(4, 8, 16);
+$secondary:rgb(4, 9, 17);
+$dark:rgb(22, 27, 37);
+$body-bg:rgb(22, 27, 37);
+.h1{
+    color:rgb(103, 237, 255);
+};
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
