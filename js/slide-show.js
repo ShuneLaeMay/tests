@@ -157,3 +157,25 @@ createSlideShow.addEventListener("click", () => {
     const allPhoto = [...document.querySelectorAll(".photo")];
     createCarousel(allPhoto.map((el) => el.src))
 })
+
+
+//Drag and Drop
+uploaderUI.addEventListener("dragover",(event) => {
+  event.preventDefault();
+});
+uploaderUI.addEventListener("drop", (event) => {
+  event.preventDefault();
+  console.log(event.dataTransfer.files);
+  [...event.dataTransfer.files].forEach((file) => {
+    const img = document.createElement("img");
+    const reader = new FileReader;
+    reader.addEventListener("load", (event) =>{
+        img.src = event.target.result;
+        img.classList.add("photo","me-2");
+        photos.append(img);
+    })
+    reader.readAsDataURL(file);
+})
+
+})
+ 
